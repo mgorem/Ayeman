@@ -13,7 +13,7 @@ class MobileScreenLayout extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: appBarColor,
         elevation: 0,
-        title: const Text("AyeMan", style: TextStyle(
+        title: const Text("WhatsPopping", style: TextStyle(
           color: Colors.grey,
           fontSize: 20,
           fontWeight: FontWeight.bold,
@@ -35,10 +35,19 @@ class MobileScreenLayout extends StatelessWidget {
           Tab(text: "CHATS",),
           Tab(text: "STATUS",),
           Tab(text: "CALLS",),
-        ]),
+        ],
+        ),
       ),
 
         body: const ContactList(),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          backgroundColor: tabColor,
+          child: const Icon(
+            Icons.comment,
+            color: Colors.white,
+          ),
+        ),
     ),
     );
   }
